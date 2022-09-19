@@ -1,39 +1,40 @@
-const resultEl = document.getElementById('result')
-const lengthEl = document.getElementById('length')
-const uppercaseEl = document.getElementById('uppercase')
-const lowercaseEl = document.getElementById('lowercase')
-const numbersEl = document.getElementById('numbers')
-const symbolsEl = document.getElementById('symbols')
-const generateEl = document.getElementById('generate')
-const clipboardEl = document.getElementById('clipboard')
+const resultEl = document.getElementById("result");
+const lengthEl = document.getElementById("length");
+const uppercaseEl = document.getElementById("uppercase");
+const lowercaseEl = document.getElementById("lowercase");
+const numbersEl = document.getElementById("numbers");
+const symbolsEl = document.getElementById("symbols");
+const generateEl = document.getElementById("generate");
+const clipboardEl = document.getElementById("clipboard");
 
 const randomFunc = {
-    lower: getRandomLower,
-    upper: getRandomUpper,
-    number: getRandomNumber,
-    symbol: getRandomSymbol
-}
+  lower: getRandomLower,
+  upper: getRandomUpper,
+  number: getRandomNumber,
+  symbol: getRandomSymbol,
+};
 
-clipboardEl.addEventListener('click', () => {
-    
-})
+const randomNumber = "0123456789";
+const randomLower = "abcdefghijklmnopqrstuvxyz";
+const randomUpper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const randomSpecial = "~!@#$%^&*()_+=-";
 
-generateEl.addEventListener('click', () => {
-    
-})
+const getRandom = () => {
+  return Math.floor(Math.random() * 10);
+};
 
-function generatePassword(lower, upper, number, symbol, length) {
-    
-}
+console.log(getRandom());
 
-function getRandomLower() {
-}
+clipboardEl.addEventListener("click", () => {});
 
-function getRandomUpper() {
-}
+generateEl.addEventListener("click", () => {});
 
-function getRandomNumber() {
-}
+function generatePassword(lower, upper, number, symbol, length) {}
 
-function getRandomSymbol() {
-}
+function getRandomLower() {}
+
+function getRandomUpper() {}
+
+function getRandomNumber() {}
+
+function getRandomSymbol() {}
