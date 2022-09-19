@@ -13,10 +13,10 @@ button.addEventListener("click", () => {
     ${randomNumberGenerator()}
     )`;
 
-  // changing text color also
-  canvas.style.color = `rgb(
-        ${randomNumberGenerator()},
-        ${randomNumberGenerator()},
-        ${randomNumberGenerator()}
-        )`;
+  // // changing text color also
+  // canvas.style.color = `rgb(
+  //       ${randomNumberGenerator()},
+  //       ${randomNumberGenerator()},
+  //       ${randomNumberGenerator()}
+  //       )`;
 });
